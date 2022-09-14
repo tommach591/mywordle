@@ -2,6 +2,10 @@ export function getRandomWord() {
   return WordList[Math.floor(Math.random() * WordList.length)];
 }
 
+export function isWord(word) {
+  return WordList.includes(word);
+}
+
 const WordList = [
   "aback",
   "abase",

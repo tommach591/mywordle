@@ -23,9 +23,9 @@
 
 .Box {
   border: 1px solid black;
+  display: inline-block;
   height: 4rem;
   width: 4rem;
-  display: inline-block;
   margin-left: 3px;
   margin-right: 3px;
   margin-bottom: 3px;
@@ -62,4 +62,68 @@
   line-height: 55px;
   background-color: rgb(230, 230, 230);
   overflow: hidden;
+}
+
+@media (max-width: 500px) {
+  .Header {
+    border-bottom: 2px solid black;
+  }
+
+  .Attempts {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .Answer {
+    height: 3rem;
+    width: 7rem;
+    display: inline-block;
+    margin-top: 1rem;
+    line-height: 50px;
+    font-size: x-large;
+    overflow: hidden;
+  }
+
+  .Box {
+    border: 1px solid black;
+    display: inline-block;
+    height: 2.85rem;
+    width: 2.85rem;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    line-height: 45px;
+    font-size: x-large;
+    overflow: hidden;
+  }
+
+  .Keyboard {
+    margin-top: 0.75rem;
+  }
+
+  .Key {
+    height: 2.5rem;
+    width: 1.75rem;
+    display: inline-block;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    border-radius: 5px;
+    line-height: 40px;
+    background-color: rgb(230, 230, 230);
+    overflow: hidden;
+  }
+
+  .OtherKey {
+    height: 2.5rem;
+    width: 3rem;
+    display: inline-block;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    border-radius: 5px;
+    line-height: 40px;
+    background-color: rgb(230, 230, 230);
+    overflow: hidden;
+  }
 }

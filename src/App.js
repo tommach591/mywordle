@@ -1,6 +1,6 @@
 import "./App.css";
 import { useEffect, useState } from "react";
-import { getRandomWord } from "./Commands.js";
+import { getRandomWord, isWord } from "./Commands.js";
 
 function App() {
   const [entries, setEntries] = useState({
@@ -40,14 +40,17 @@ function App() {
     }
 
     function SubmitEntry() {
-      if (entries.column === 5) {
+      if (
+        entries.column === 5 &&
+        isWord(entries.matrix[entries.row].join("").toLowerCase())
+      ) {
         entries.column = 0;
         var correct = CheckWord(entries.row);
         if (correct || entries.row >= 5) {
           entries.done = true;
           var answer = document.getElementById("Answer");
           answer.style.color = "white";
-          answer.innerHTML = entries.word;
+          answer.innerHTML = entries.word.toUpperCase();
           if (correct) {
             answer.style.backgroundColor = "forestgreen";
           } else {
@@ -56,6 +59,8 @@ function App() {
         }
         if (entries.row < 6) entries.row++;
         setEntries(entries);
+      } else {
+        alert("Not a valid word.");
       }
     }
 
@@ -148,11 +153,6 @@ function App() {
           UpdateMatrix(key);
         }
       }
-      console.log(
-        `row: ${entries.row} col: ${entries.column} val: ${
-          entries.matrix[entries.row]
-        } word: ${entries.word}`
-      );
     };
 
     SetWord();
