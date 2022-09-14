@@ -1,0 +1,65 @@
+.HomePage {
+  text-align: center;
+}
+
+.Header {
+  border-bottom: 3px solid black;
+}
+
+.Attempts {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.Answer {
+  height: 4rem;
+  width: 8rem;
+  display: inline-block;
+  margin-top: 2rem;
+  line-height: 65px;
+  font-size: x-large;
+  overflow: hidden;
+}
+
+.Box {
+  border: 1px solid black;
+  height: 4rem;
+  width: 4rem;
+  display: inline-block;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  line-height: 65px;
+  font-size: x-large;
+  overflow: hidden;
+}
+
+.Keyboard {
+  margin-top: 2rem;
+}
+
+.Key {
+  height: 3.5rem;
+  width: 3rem;
+  display: inline-block;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  border-radius: 5px;
+  line-height: 55px;
+  background-color: rgb(230, 230, 230);
+  overflow: hidden;
+}
+
+.OtherKey {
+  height: 3.5rem;
+  width: 4.5rem;
+  display: inline-block;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  border-radius: 5px;
+  line-height: 55px;
+  background-color: rgb(230, 230, 230);
+  overflow: hidden;
+}

@@ -1,0 +1,9 @@
+{
+  "short_name": "My Wordle",
+  "name": "My Wordle",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
